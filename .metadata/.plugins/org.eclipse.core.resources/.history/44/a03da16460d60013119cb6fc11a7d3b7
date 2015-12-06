@@ -1,0 +1,50 @@
+package KernalPanic_TriviaMaze;
+
+import java.util.Scanner;
+
+public class PromptUser {
+	private Scanner kb = new Scanner(System.in);
+
+	public String forInitials() {
+		String initials = null;
+
+		do {
+			System.out.print("Please enter your initials: ");
+			initials = kb.nextLine();
+			if (initials.length() > 5)
+				System.out
+						.println("Please only enter your initials (5 chars maz).");
+
+		} while (initials.length() > 5);
+
+		return initials;
+	}
+
+	public char forMazeSize()
+	{
+		char mazeSize;
+		String kbInput;
+		
+		do
+		{
+			displayMazeSizes();
+			System.out.print("Size (S,M,L): ");
+			kbInput=kb.nextLine();
+			mazeSize=kbInput.toLowerCase().charAt(0);
+			
+			if(mazeSize != 's' && mazeSize != 'm' && mazeSize != 'l')
+				
+			
+		}while();
+		
+		return mazeSize;
+	}
+
+	private void displayMazeSizes() {
+		System.out.println("Please select a maze size");
+		System.out.println("Small 6x6");
+		System.out.println("Medium 10x10");
+		System.out.println("Large 14x14");
+	}
+
+}

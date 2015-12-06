@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class TriviaMazeGame {
+
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		
+		String initals=promptInitials(kb);
+	}
+
+	private static String promptInitials(Scanner kb) {
+		String initials=null;
+		do
+		{
+			System.out.print("Please enter your initials: ");
+			initials=kb.nextLine();
+			if(initials.length()>5)
+				System.out.println("Please only en")
+			
+		}while(initials.length()>5);
+		return initials;
+	}
+
+}

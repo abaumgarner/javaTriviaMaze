@@ -1,0 +1,9 @@
+package KernalPanic_TriviaMaze;
+
+public class TriviaMazeGame {
+
+	public static void main(String[] args) {
+		Player current = new Player();
+	}
+
+}

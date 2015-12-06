@@ -1,0 +1,12 @@
+package KernalPanic_TriviaMaze;
+
+public class TriviaMazeGame {
+	private static PromptUser prompt=new PromptUser();
+
+	public static void main(String[] args) {
+		Player current = new Player(prompt);
+		char mazeSize= prompt.forMazeSize();
+		System.out.rpintln(current.toString());
+	}
+
+}

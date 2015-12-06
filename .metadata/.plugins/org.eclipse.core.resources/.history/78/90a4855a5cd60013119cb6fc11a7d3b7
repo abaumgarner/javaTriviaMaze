@@ -1,0 +1,14 @@
+package KernalPanic_TriviaMaze;
+import java.util.Scanner;
+
+public class TriviaMazeGame {
+
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		
+		
+	}
+
+	
+
+}

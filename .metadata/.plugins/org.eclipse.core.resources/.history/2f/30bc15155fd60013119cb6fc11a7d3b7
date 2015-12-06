@@ -1,0 +1,50 @@
+package KernalPanic_TriviaMaze;
+
+import java.util.Scanner;
+
+public class Player {
+	private String initials;
+	private int numCorrect;
+	private int numWrong;
+	private PromptUser user=new PromptUser();
+	
+	public Player() {
+		this.initials = PromptUser.forInitials();
+		this.numCorrect = 0;
+		this.numWrong = 0;
+	}
+
+	public String getInitials() {
+		return this.initials;
+	}
+
+	public int getNumCorrect() {
+		return this.numCorrect;
+	}
+
+	public int getNumWrong() {
+		return this.numWrong;
+	}
+
+	private void setInitals(String str) {
+		this.initials = str;
+	}
+
+	public void setNumCorrect(int correct) {
+		this.numCorrect = correct;
+	}
+
+	public void setNumWrong(int wrong) {
+		this.numWrong = wrong;
+	}
+
+	public String toString() {
+		String playerStr;
+
+		playerStr = "Initals: " + this.initials
+				+ "\nNumber of questions correct: " + this.numCorrect
+				+ "\nNumber of questions wrong: " + this.numWrong;
+
+		return playerStr;
+	}
+}

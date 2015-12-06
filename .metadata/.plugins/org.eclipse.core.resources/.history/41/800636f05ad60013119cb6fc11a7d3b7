@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class TriviaMazeGame {
+
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		
+		String initals=promptInitials(kb);
+	}
+
+	private static String promptInitials(Scanner kb) {
+		System.out.print("Please enter ");
+		return null;
+	}
+
+}
